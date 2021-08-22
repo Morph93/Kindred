@@ -18,7 +18,7 @@ Feature:  test
       | numbers            |
       | combinations       |
 
-  @Smoke
+  @Kindred
   Scenario Outline: Check the redirection after confirming input in search bar
     When   Input "<string>" string into the search bar and confirm input
     Then   Check redirection for "<string>" type of input

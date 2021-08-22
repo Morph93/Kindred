@@ -20,7 +20,6 @@ public class DataSync extends FunctionsPage {
         initMap();
     }
 
-
     HashMap<String, By> mapOfPageElements = new HashMap<>();
 
     private void initMap() {

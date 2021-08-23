@@ -15,14 +15,13 @@ import java.util.Date;
 @CucumberOptions(
 
         plugin = {"pretty",
-                "parallel.ApplicationHooks",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "timeline:test-output-thread/"
 
         },
         monochrome = true,
         glue = {"parallel"},
-        tags = "@Smoke",
+        tags = "@Kindred",
         features = {"src/test/resources/parallel/ui"}
 
 )

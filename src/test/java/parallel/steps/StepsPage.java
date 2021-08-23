@@ -8,6 +8,7 @@ import pages.chrome.DataSync;
 import pages.chrome.TermsOfUse;
 import pages.unibet.HomePage;
 import pages.unibet.BlogSidebar;
+import pages.unibet.NoSearchResults;
 import pages.unibet.RedirectionCheck;
 import parallel.ApplicationHooks;
 
@@ -18,7 +19,7 @@ public class StepsPage {
     HomePage homePage;
     BlogSidebar blogSidebar;
     RedirectionCheck redirectionCheck;
-
+    NoSearchResults noSearchResults;
 
     @Given("Accept terms of use")
     public void acceptTermsOfUse() {
@@ -71,4 +72,25 @@ public class StepsPage {
     }
 
 
+    @And("Type {string} into new search bar on the page")
+    public void typeIntoNewSearchBarOnThePage(String arg0) {
+        noSearchResults = new NoSearchResults(ApplicationHooks.getDriver());
+        noSearchResults.inputTextIntoSearchBar(arg0);
+    }
+
+
+    @Then("Check if autosuggestion works")
+    public void checkIfAutosuggestionWorks() {
+        noSearchResults.checkSuggestionList();
+    }
+
+    @And("Click on X to delete input")
+    public void clickOnXToDeleteInput() {
+        noSearchResults.clickOnXToRemoveInput();
+    }
+
+    @Then("Check if the input has been deleted")
+    public void checkIfTheInputHasBeenDeleted() {
+        noSearchResults.checkIfInputHasBeenRemoved();
+    }
 }

@@ -72,6 +72,9 @@ public class BlogSidebar extends FunctionsPage {
             case "combinations":
                 inputTextAndSubmit(mapOfPageElements.get("searchBar"), "25 York", "searchBar");
                 break;
+            case "empty":
+                inputTextAndSubmit(mapOfPageElements.get("searchBar"), "", "searchBar");
+                break;
             default:
                 break;
         }

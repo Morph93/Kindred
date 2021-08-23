@@ -18,10 +18,10 @@
 		<protocol>http</protocol>
 		<!-- title of the document -->
 
-		<documentTitle>FBK Report</documentTitle>
+		<documentTitle>Kindred</documentTitle>
 		<!-- report name - displayed at top-nav -->
 
-		<reportName>FBK Report</reportName>
+		<reportName>Kindred</reportName>
 		<!-- location of charts in the test view -->
 
 		<!-- global date format override -->

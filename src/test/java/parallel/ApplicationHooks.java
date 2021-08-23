@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import qa.driverFactory.DriverFactory;
 
 
-public class ApplicationHooks {
+public class ApplicationHooks  {
 
 
     private static AppiumDriver<MobileElement> driver;

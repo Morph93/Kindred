@@ -18,8 +18,8 @@
 - The Cass RunUI is a runner class is used to run all desired scenarios. 
 - In order to target specific scenarios you have to change "tags" that you target. For example, we will target @Kindred to run all tests that is defined inside the resources.parallel.ui folder 
 
-##How to run tests?
-
+## How to run tests?
+ 
 - Before running tests make sure that you check following things: 
   - capabilities inside DriverFactory class, for example: device name and android version.
   - Start appium server 
@@ -37,7 +37,7 @@
 - Two types of report are generated, HTML and PDF located in test-output folder.
 
 
-##What would I automate if I had more time: 
+## What would I automate if I had more time: 
 
 - I would cover login feature as it is the most important part for this kind of the application 
 - Also, I would cover opening of all pages to check if all pages are implemented correctly.
